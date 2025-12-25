@@ -83,6 +83,5 @@ Detailed ablations confirmed the effectiveness of each component:
 * **Trajectory Visualization**: Qualitative examples demonstrate that our method accurately detects novel objects (e.g., "lizard") that are missed by baseline models like RePro.
 
 <div style="text-align: center; margin-top: 20px;">
-  <img src="/images/tpami_results.png" alt="Experimental Results" style="width: 80%; border: 1px solid #eee; border-radius: 8px;">
-  <p style="color: #666; font-size: 0.9em;">Table: Performance comparison on VidVRD and VidOR benchmarks.</p>
+  <img src="/images/tpami_traj.png" alt="Experimental Results" style="width: 90%; border: 1px solid #eee; border-radius: 8px;">
 </div>
