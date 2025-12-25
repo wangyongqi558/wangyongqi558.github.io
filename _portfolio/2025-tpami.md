@@ -70,7 +70,7 @@ Our end-to-end framework consistently outperformed existing methods (e.g., RePro
 ![Experiment](/images/tpami_result.png)
 ![Experiment](/images/tpami_result2.png)
 <div style="text-align: center; margin-top: 20px;">
-  <img src="/images/tpami_result3.png" alt="Experimental Results" style="width: 40%; border: 1px solid #eee; border-radius: 8px;">
+  <img src="/images/tpami_result3.png" alt="Experimental Results" style="width: 60%; border: 1px solid #eee; border-radius: 8px;">
 </div>
 
 ### 3.3 Ablation Studies
