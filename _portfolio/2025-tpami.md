@@ -50,7 +50,7 @@ This module predicts relationship categories between the generated object trajec
 * **Vision-guided Language Prompting**: We generate dynamic language prompts based on visual features to discover novel relationships.
 
 
-![Methodology](/images/aaai24_method.png)
+![Methodology](/images/tpami_method.png)
 
 ## Experiments
 
@@ -62,20 +62,21 @@ We evaluated our framework on two large-scale benchmarks for video relationship 
 * **Settings**: Experiments were conducted under **Novel-split** (unseen categories) and **All-split** (standard) settings.
 
 ### Main Results
-Our end-to-end framework consistently outperformed existing methods (e.g., RePro, VidVRD-II, ALPro) that rely on pre-trained closed-set trajectory detectors[cite: 432].
-* [cite_start]**VidVRD Dataset**: On the **Novel SGDet** task, our method achieved a **21.94% improvement in $mAP_o$** and a **2.89% gain in mAP**.
-* **VidOR Dataset**: Our method improved $mAP_o$ by 1.22% and mAP by 1.61% in the novel split, demonstrating strong generalization in complex, long-video scenarios[cite: 433, 434].
-* [cite_start]**Cross-Dataset Generalization**: When trained on VidOR and tested on VidVRD, our method surpassed the "upper bound" results of several previous state-of-the-art models, proving its robustness in real-world, open-world scenarios[cite: 802, 803].
+Our end-to-end framework consistently outperformed existing methods (e.g., RePro, VidVRD-II, ALPro) that rely on pre-trained closed-set trajectory detectors.
+* **VidVRD Dataset**: On the **Novel SGDet** task, our method achieved a **21.94% improvement in $mAP_o$** and a **2.89% gain in mAP**.
+* **VidOR Dataset**: Our method improved $mAP_o$ by 1.22% and mAP by 1.61% in the novel split, demonstrating strong generalization in complex, long-video scenarios.
+* **Cross-Dataset Generalization**: When trained on VidOR and tested on VidVRD, our method surpassed the "upper bound" results of several previous state-of-the-art models, proving its robustness in real-world, open-world scenarios.
+
+![Experiment](/images/tpami_result.png)
 
 ### 3.3 Ablation Studies
 Detailed ablations confirmed the effectiveness of each component:
-* [cite_start]**End-to-End Training**: Unifying trajectory detection and relationship classification yielded better results than training them separately[cite: 441].
-* **Relationship-Aware Detector**: The inclusion of **Relationship Queries** and the **Auxiliary Object Classifier** significantly enhanced the perception of interactions and novel objects[cite: 445].
-* [cite_start]**Multi-modal Prompting**: Combining spatio-temporal visual prompting with vision-guided language prompting was found to be critical for discovering novel relationships[cite: 558, 563].
+* **End-to-End Training**: Unifying trajectory detection and relationship classification yielded better results than training them separately.
+* **Relationship-Aware Detector**: The inclusion of **Relationship Queries** and the **Auxiliary Object Classifier** significantly enhanced the perception of interactions and novel objects.
+* **Multi-modal Prompting**: Combining spatio-temporal visual prompting with vision-guided language prompting was found to be critical for discovering novel relationships.
 
 ### 3.4 Qualitative Analysis
-* [cite_start]**T-SNE Visualization**: Feature distribution plots show that our method effectively clusters features within the same category while pushing different categories apart, for both base and novel predicates[cite: 731].
-* **Trajectory Visualization**: Qualitative examples demonstrate that our method accurately detects novel objects (e.g., "lizard") that are missed by baseline models like RePro[cite: 677, 679].
+* **Trajectory Visualization**: Qualitative examples demonstrate that our method accurately detects novel objects (e.g., "lizard") that are missed by baseline models like RePro.
 
 <div style="text-align: center; margin-top: 20px;">
   <img src="/images/tpami_results.png" alt="Experimental Results" style="width: 80%; border: 1px solid #eee; border-radius: 8px;">
