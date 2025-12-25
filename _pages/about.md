@@ -2,7 +2,7 @@
 layout: archive
 title: "Open-Vocabulary Video Visual Relationship Detection"
 permalink: /
-author_profile: true
+author_profile: false
 ---
 
 {% include base_path %}
