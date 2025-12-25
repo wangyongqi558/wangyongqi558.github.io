@@ -51,6 +51,8 @@ This module predicts relationship categories between the generated object trajec
 
 
 ![Methodology](/images/tpami_method.png)
+![Methodology](/images/tpami_method2.png)
+![Methodology](/images/tpami_method3.png)
 
 ## Experiments
 
