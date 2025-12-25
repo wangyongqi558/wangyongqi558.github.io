@@ -37,33 +37,17 @@ The framework consists of two primary components:
 
 This component performs frame-wise detection and associates them into coherent trajectories.
 
-* 
-**Query-based Transformer Decoder**: We distill the visual encoder of CLIP into the decoder to enhance open-vocabulary object representation.
-
-
-* 
-**Relationship Queries**: To explicitly perceive interaction context during detection, we embed dedicated "relationship queries" and utilize an auxiliary relationship loss.
-
-
-* 
-**Auxiliary Object Classifier**: To improve novel object category detection, we use a vision-guided prompting method that combines learnable continuous and conditional language prompts for CLIP.
-
-
+* **Query-based Transformer Decoder**: We distill the visual encoder of CLIP into the decoder to enhance open-vocabulary object representation.
+* **Relationship Queries**: To explicitly perceive interaction context during detection, we embed dedicated "relationship queries" and utilize an auxiliary relationship loss.
+* **Auxiliary Object Classifier**: To improve novel object category detection, we use a vision-guided prompting method that combines learnable continuous and conditional language prompts for CLIP.
 
 ### 2. Open-vocabulary Relationship Classifier
 
 This module predicts relationship categories between the generated object trajectories using CLIP’s rich semantic knowledge.
 
-* 
-**Multi-modal Prompting**: We apply prompting to both the visual and textual branches of CLIP to better adapt it to the video domain.
-
-
-* 
-**Spatio-temporal Visual Prompting**: This module decouples spatial and temporal modeling to capture dynamic contexts across frames.
-
-
-* 
-**Vision-guided Language Prompting**: We generate dynamic language prompts based on visual features to discover novel relationships.
+* **Multi-modal Prompting**: We apply prompting to both the visual and textual branches of CLIP to better adapt it to the video domain.
+* **Spatio-temporal Visual Prompting**: This module decouples spatial and temporal modeling to capture dynamic contexts across frames.
+* **Vision-guided Language Prompting**: We generate dynamic language prompts based on visual features to discover novel relationships.
 
 
 ![Methodology](/images/aaai24_method.png)
