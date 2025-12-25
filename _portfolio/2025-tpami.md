@@ -85,3 +85,9 @@ Detailed ablations confirmed the effectiveness of each component:
 <div style="text-align: center; margin-top: 20px;">
   <img src="/images/tpami_traj.png" alt="Experimental Results" style="width: 90%; border: 1px solid #eee; border-radius: 8px;">
 </div>
+
+* **Case Study**
+
+<div style="text-align: center; margin-top: 20px;">
+  <img src="/images/tpami_case.png" alt="Experimental Results" style="width: 90%; border: 1px solid #eee; border-radius: 8px;">
+</div>
