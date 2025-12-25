@@ -51,8 +51,6 @@ This module predicts relationship categories between the generated object trajec
 
 
 ![Methodology](/images/tpami_method.png)
-![Methodology](/images/tpami_method2.png)
-![Methodology](/images/tpami_method3.png)
 
 ## Experiments
 
@@ -70,6 +68,8 @@ Our end-to-end framework consistently outperformed existing methods (e.g., RePro
 * **Cross-Dataset Generalization**: When trained on VidOR and tested on VidVRD, our method surpassed the "upper bound" results of several previous state-of-the-art models, proving its robustness in real-world, open-world scenarios.
 
 ![Experiment](/images/tpami_result.png)
+![Experiment](/images/tpami_result2.png)
+![Experiment](/images/tpami_result3.png)
 
 ### 3.3 Ablation Studies
 Detailed ablations confirmed the effectiveness of each component:
