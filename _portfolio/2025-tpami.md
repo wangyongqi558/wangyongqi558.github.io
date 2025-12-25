@@ -28,10 +28,43 @@ effectiveness of our framework. Our framework is also applied to a more difficul
 its generalization ability.
 
 ## Methodology
-The framework focuses on two key adaptations of the CLIP architecture:
-1.  **Dual-side Prompt Tuning**: We introduce learnable prompt tokens into both the image encoder and text encoder. This allows the model to align video features with semantic descriptions more flexibly.
-2.  **Vision-guided Language Prompting**: Instead of static text prompts, we use visual context to guide the generation of language prompts, helping the model "see" the relationship before naming it.
-3.  **Spatial-Temporal Context**: Learnable conditional prompts are used to capture the dynamic changes in video frames.
+
+We propose a novel **end-to-end framework** for Open-vocabulary Video Visual Relationship Detection (Open-VidVRD) that jointly models object trajectory detection and relationship classification. Unlike existing methods that rely on trajectory detectors pre-trained on closed datasets, our framework eliminates the domain gap and enhances generalization to novel object and relationship categories.
+
+The framework consists of two primary components:
+
+### 1. Relationship-aware Open-vocabulary Trajectory Detector
+
+This component performs frame-wise detection and associates them into coherent trajectories.
+
+* 
+**Query-based Transformer Decoder**: We distill the visual encoder of CLIP into the decoder to enhance open-vocabulary object representation.
+
+
+* 
+**Relationship Queries**: To explicitly perceive interaction context during detection, we embed dedicated "relationship queries" and utilize an auxiliary relationship loss.
+
+
+* 
+**Auxiliary Object Classifier**: To improve novel object category detection, we use a vision-guided prompting method that combines learnable continuous and conditional language prompts for CLIP.
+
+
+
+### 2. Open-vocabulary Relationship Classifier
+
+This module predicts relationship categories between the generated object trajectories using CLIP’s rich semantic knowledge.
+
+* 
+**Multi-modal Prompting**: We apply prompting to both the visual and textual branches of CLIP to better adapt it to the video domain.
+
+
+* 
+**Spatio-temporal Visual Prompting**: This module decouples spatial and temporal modeling to capture dynamic contexts across frames.
+
+
+* 
+**Vision-guided Language Prompting**: We generate dynamic language prompts based on visual features to discover novel relationships.
+
 
 ![Methodology](/images/aaai24_method.png)
 
