@@ -36,7 +36,7 @@ author_profile: false # 彻底移除左侧边栏
   </div>
 
   <div style="width: 100%; text-align: justify; line-height: 1.6; color: #444;">
-    <p><strong>Abstract:</strong> {{ post.abstract_short }}</p>
+    <p>{{ post.abstract_short }}</p>
   </div>
 </div>
 {% endfor %}
