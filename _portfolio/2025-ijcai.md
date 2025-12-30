@@ -48,3 +48,13 @@ METOR achieves state-of-the-art performance across both datasets, significantly 
 * **Significant Improvement**: On the VidOR Novel-split, METOR outperforms the best competing method by a relative margin of **53.06%** (3.75% vs. 2.45% mAP).
 * **Mutual Enhancement**: The iterative refinement process effectively reduces both **Object Errors (OE)** and **Relationship Errors (RE)** by ensuring that localization and classification tasks benefit from each other's context.
 * **Superior Generalization**: By leveraging CLIP-based contextual refinement, the model demonstrates a robust ability to identify novel interactions in dynamic and complex real-world video scenes.
+
+## Citation
+
+```bibtex
+@article{wang2025metor,
+  title={METOR: A Unified Framework for Mutual Enhancement of Objects and Relationships in Open-vocabulary Video Visual Relationship Detection},
+  author={Wang, Yongqi and Wu, Xinxiao and Yang, Shuo},
+  journal={arXiv preprint arXiv:2505.06663},
+  year={2025}
+}
