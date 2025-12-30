@@ -5,7 +5,7 @@ permalink: /
 author_profile: false # 彻底移除左侧边栏
 ---
 
-## 🎥 Unified Project Demo
+## 🎥 Demo
 <div style="width: 100%; margin-bottom: 50px;">
   <div style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 60px; text-align: center;">
     <p style="color: #888; font-style: italic;">[ Overall Project Video Demo Placeholder ]</p>
