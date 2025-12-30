@@ -34,20 +34,17 @@ METOR simplifies the Open-VidVRD process by optimizing all components in an end-
 
 ## Experiments
 
-### Datasets and Evaluation
-We evaluate our method on two large-scale benchmarks:
-* **VidVRD**: 1,000 videos covering 35 object and 132 predicate categories.
-* **VidOR**: 10,000 videos covering 80 object and 50 predicate categories.
-* **Settings**: Training on **Base** categories and testing on **Novel** and **All** splits.
+### 3.1 Experimental Setup
+* **Datasets**: We evaluated METOR on the **VidVRD** (1,000 videos) and **VidOR** (10,000 videos) benchmarks.
+* **Settings**: The model was trained only on base categories and tested on both **Novel** (unseen relationships) and **All** (standard) splits.
+* **Metrics**: We used **mean Average Precision (mAP)** and **Recall@K (R@50/100)** for relationship classification, and **$mAP_o$** to evaluate object trajectory quality.
 
-### Main Results
-Our method consistently outperforms existing works like RePro, VidVRD-II, and ALPro. Notably, we achieve a **nearly 10% mAP improvement** on the Novel split of VidVRD.
+### 3.2 Main Results (SGDet Task)
+METOR achieves state-of-the-art performance across both datasets, significantly reducing error propagation compared to traditional cascaded pipelines.
 
-![Experiments](/images/aaai24_result.png)
+![Experiments](/images/ijcai25_result.png)
 
-### Qualitative Analysis
-T-SNE visualizations demonstrate that our spatio-temporal visual prompting effectively adapts the CLIP image encoder, pulling features of the same categories closer while pushing different categories apart for both base and novel predicates.
-
-<div style="text-align: center;">
-  <img src="/images/aaai24_tsne.png" alt="T-SNE Visualization" style="width: 50%; max-width: 500px; border-radius: 8px;">
-</div>
+### 3.3 Key Findings
+* **Significant Improvement**: On the VidOR Novel-split, METOR outperforms the best competing method by a relative margin of **53.06%** (3.75% vs. 2.45% mAP).
+* **Mutual Enhancement**: The iterative refinement process effectively reduces both **Object Errors (OE)** and **Relationship Errors (RE)** by ensuring that localization and classification tasks benefit from each other's context.
+* **Superior Generalization**: By leveraging CLIP-based contextual refinement, the model demonstrates a robust ability to identify novel interactions in dynamic and complex real-world video scenes.
