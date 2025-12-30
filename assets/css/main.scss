@@ -41,3 +41,8 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+
+/* 隐藏最底部的页脚区域 (Sitemap, Copyright 等) */
+.page__footer {
+  display: none !important;
+}
