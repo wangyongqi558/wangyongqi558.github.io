@@ -43,6 +43,7 @@ METOR simplifies the Open-VidVRD process by optimizing all components in an end-
 METOR achieves state-of-the-art performance across both datasets, significantly reducing error propagation compared to traditional cascaded pipelines.
 
 ![Experiments](/images/ijcai25_result.png)
+![Experiments](/images/ijcai25_result2.png)
 
 ### 3.3 Key Findings
 * **Significant Improvement**: On the VidOR Novel-split, METOR outperforms the best competing method by a relative margin of **53.06%** (3.75% vs. 2.45% mAP).
