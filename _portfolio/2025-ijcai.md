@@ -51,10 +51,13 @@ METOR achieves state-of-the-art performance across both datasets, significantly 
 
 ## Citation
 
-```bibtex
-@article{wang2025metor,
+<div style="background-color: #f8f9fa; padding: 15px; border-left: 5px solid #007bff; border-radius: 5px;">
+  <h3 style="margin-top: 0;">Cite as (BibTeX)</h3>
+  <pre><code>@article{wang2025metor,
   title={METOR: A Unified Framework for Mutual Enhancement of Objects and Relationships in Open-vocabulary Video Visual Relationship Detection},
   author={Wang, Yongqi and Wu, Xinxiao and Yang, Shuo},
   journal={arXiv preprint arXiv:2505.06663},
   year={2025}
 }
+</code></pre>
+</div>
