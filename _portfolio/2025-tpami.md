@@ -91,3 +91,13 @@ Detailed ablations confirmed the effectiveness of each component:
 <div style="text-align: center; margin-top: 20px;">
   <img src="/images/tpami_case.png" alt="Experimental Results" style="width: 90%; border: 1px solid #eee; border-radius: 8px;">
 </div>
+
+
+
+@article{wang2025end,
+  title={End-to-end open-vocabulary video visual relationship detection using multi-modal prompting},
+  author={Wang, Yongqi and Wu, Xinxiao and Yang, Shuo and Luo, Jiebo},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  year={2025},
+  publisher={IEEE}
+}
