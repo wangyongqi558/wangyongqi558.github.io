@@ -13,12 +13,24 @@ abstract_short: "Open-vocabulary Video Visual Relationship Detection (Open-VidVR
 Open-vocabulary video visual relationship detection aims to detect objects and their relationships in videos without being restricted by predefined object or relationship categories. Existing methods leverage the rich semantic knowledge of pre-trained vision-language models suchas CLIP to identify novel categories. They typically adopt a cascaded pipeline to first detect objects and then classify relationships based on the detected objects, which may lead to error propagation and thus suboptimal performance. In this paper, we propose Mutual EnhancemenT of Objects and Relationships (METOR), a query-based unified framework to jointly model and mutually enhance object detection and relationship classification in open-vocabulary scenarios. Under this framework, we first design a CLIP-based contextual refinement encoding module that extracts visual contexts of objects and relationships to refine the encoding of text features and object queries, thus improving the generalization of encoding to novel categories. Then we propose an iterative enhancement module to alternatively enhance the representations of objects and relationships by fully exploiting their interdependence to improve recognition performance. Extensive experiments on two public datasets, VidVRD and VidOR, demonstrate that our framework achieves state-of-the art performance. 
 
 ## Methodology
-The framework focuses on two key adaptations of the CLIP architecture:
-1.  **Dual-side Prompt Tuning**: We introduce learnable prompt tokens into both the image encoder and text encoder. This allows the model to align video features with semantic descriptions more flexibly.
-2.  **Vision-guided Language Prompting**: Instead of static text prompts, we use visual context to guide the generation of language prompts, helping the model "see" the relationship before naming it.
-3.  **Spatial-Temporal Visual Prompting**: Learnable conditional prompts are used to capture the dynamic changes in video frames.
+METOR (Mutual EnhancemenT of Objects and Relationships) is a query-based unified framework designed to jointly model object detection and relationship classification. By moving away from traditional cascaded pipelines, METOR exploits the interdependence between entities and their interactions to achieve superior open-vocabulary performance.
 
-![Methodology](/images/aaai24_method.png)
+### Contextual Refinement Encoding (CRE)
+To enhance generalization to novel categories, the CRE module extracts specific visual contexts for both objects and relationships to refine the initial encoding process.
+* **Contextual Token Integration**: Learnable object and relationship context tokens are inserted into the CLIP visual encoder to capture global semantic information from the video.
+* **Semantic Refinement**: These contexts are used to refine the CLIP text features and object queries, providing instance-specific knowledge that helps the model recognize unseen categories more accurately.
+
+### Iterative Enhancement Module (IEM)
+The IEM module is the core of our "mutual enhancement" strategy, consisting of multiple layers that alternately update object and relationship representations.
+* **Spatio-Temporal Modeling**: In each layer, subject and object features are combined with global embeddings to generate relationship features through a spatio-temporal Transformer.
+* **Mutual Feedback Loop**: The extracted relationship features are fed back to refine the subject and object representations. This cyclical process ensures that localization and classification tasks benefit from each other's context.
+
+### Unified Modeling & Training
+METOR simplifies the Open-VidVRD process by optimizing all components in an end-to-end manner:
+* **Joint Optimization**: By modeling objects and relationships simultaneously, the framework significantly reduces the error propagation common in decoupled systems.
+* **Training Objective**: The model is trained using a combination of contrastive losses for classification and trajectory losses for precise spatio-temporal localization.
+
+![Methodology](/images/ijcai25_method.png)
 
 ## Experiments
 
