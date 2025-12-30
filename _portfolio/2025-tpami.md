@@ -93,11 +93,16 @@ Detailed ablations confirmed the effectiveness of each component:
 </div>
 
 
+## Citation
 
-@article{wang2025end,
+<div style="background-color: #f8f9fa; padding: 15px; border-left: 5px solid #007bff; border-radius: 5px;">
+  <h3 style="margin-top: 0;">Cite as (BibTeX)</h3>
+  <pre><code>@article{wang2025end,
   title={End-to-end open-vocabulary video visual relationship detection using multi-modal prompting},
   author={Wang, Yongqi and Wu, Xinxiao and Yang, Shuo and Luo, Jiebo},
   journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
   year={2025},
   publisher={IEEE}
 }
+</code></pre>
+</div>
