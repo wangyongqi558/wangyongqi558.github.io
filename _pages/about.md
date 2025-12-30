@@ -6,10 +6,14 @@ author_profile: false # 彻底移除左侧边栏
 ---
 
 ## 🎥 Demo
-<div style="width: 100%; margin-bottom: 50px;">
-  <div style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 60px; text-align: center;">
-    <p style="color: #888; font-style: italic;">[ Overall Project Video Demo Placeholder ]</p>
-  </div>
+<div style="width: 100%; text-align: center; margin-bottom: 50px;">
+  <video width="100%" style="max-width: 900px; border-radius: 12px; border: 1px solid #ddd; box-shadow: 0 4px 20px rgba(0,0,0,0.1);" controls muted autoplay loop>
+    <source src="/images/demo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <p style="color: #666; margin-top: 10px; font-style: italic;">
+    This demo showcases our unified framework across various open-vocabulary scenarios.
+  </p>
 </div>
 
 ---
