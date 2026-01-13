@@ -53,3 +53,31 @@ $monospace-font-family: "Roboto Mono", monospace;
 .page__footer {
   display: none !important;
 }
+
+.archive__item-teaser img {
+  border-radius: 6px; /* 圆角 */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 淡淡的阴影 */
+  transition: transform 0.3s;
+}
+
+.archive__item-teaser img:hover {
+  transform: scale(1.02); /* 鼠标悬停轻微放大 */
+}
+
+.btn-academic {
+  display: inline-block;
+  padding: 4px 12px;
+  margin: 2px 4px 2px 0;
+  border-radius: 20px; /* 圆角胶囊感 */
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none !important;
+  border: 1px solid #007bff;
+  color: #007bff !important;
+  transition: all 0.3s;
+}
+
+.btn-academic:hover {
+  background-color: #007bff;
+  color: #ffffff !important;
+}
