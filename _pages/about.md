@@ -19,21 +19,20 @@ author_profile: false # 彻底移除左侧边栏
 ---
 
 ## 📢 News
-<div style="background-color: #fcfcfc; padding: 18px; border-radius: 10px; border: 1px solid #eee; border-left: 5px solid #0056b3;">
-  <ul style="list-style-type: none; margin-left: -20px; font-size: 0.95rem; line-height: 1.6;">
-    <li style="margin-bottom: 10px;">
-      <span style="background-color: #eef6ff; color: #0056b3; padding: 2px 8px; border-radius: 4px; font-weight: bold; margin-right: 10px;">Apr 2025</span> 
-      Our paper <b>"METOR: A Unified Framework for Mutual Enhancement of Objects and Relationships"</b> was accepted by <b>IJCAI 2025</b>!
-    </li>
-    <li style="margin-bottom: 10px;">
-      <span style="background-color: #eef6ff; color: #0056b3; padding: 2px 8px; border-radius: 4px; font-weight: bold; margin-right: 10px;">Apr 2025</span> 
-      One paper on <b>End-to-end Open-vocabulary VidVRD</b> was accepted by <b>IEEE TPAMI</b>! 
-    </li>
-    <li style="margin-bottom: 10px;">
-      <span style="background-color: #f8f9fa; color: #666; padding: 2px 8px; border-radius: 4px; font-weight: bold; margin-right: 10px;">Dec 2023</span> 
-      One paper on <b>Multi-modal Prompting for Open-vocabulary VidVRD</b> was accepted by <b>AAAI 2024</b>!
-    </li>
-  </ul>
+
+<div class="news-container">
+  <div class="news-item">
+    <div class="news-date">Apr 2025</div>
+    <div class="news-content">🎉 Our paper <b>"METOR: A Unified Framework for Mutual Enhancement of Objects and Relationships"</b> was accepted by <b>IJCAI 2025</b>!</div>
+  </div>
+  <div class="news-item">
+    <div class="news-date">Apr 2025</div>
+    <div class="news-content">🔥 One paper on <b>End-to-end Open-vocabulary VidVRD</b> was accepted by <b>IEEE TPAMI</b>!</div>
+  </div>
+  <div class="news-item">
+    <div class="news-date">Dec 2023</div>
+    <div class="news-content">📝 One paper on <b>Multi-modal Prompting for Open-vocabulary VidVRD</b> was accepted by <b>AAAI 2024</b>!</div>
+  </div>
 </div>
 
 ## 📚 Publications
