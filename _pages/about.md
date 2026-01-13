@@ -18,6 +18,15 @@ author_profile: false # 彻底移除左侧边栏
 
 ---
 
+## 📢 News
+<div style="background-color: #f9f9f9; padding: 15px; border-radius: 8px; border-left: 5px solid #007bff; max-height: 200px; overflow-y: auto;">
+  <ul>
+    <li><b>[2025.01]</b> One paper accepted by <b>TPAMI 2025</b>!</li>
+    <li><b>[2024.12]</b> Invited to give a talk at [Place/University Name].</li>
+    <li><b>[2024.05]</b> Awarded the [Name of Scholarship/Award].</li>
+  </ul>
+</div>
+
 ## 📚 Publications
 
 {% for post in site.portfolio reversed %}
