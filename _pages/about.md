@@ -19,11 +19,20 @@ author_profile: false # 彻底移除左侧边栏
 ---
 
 ## 📢 News
-<div style="background-color: #f9f9f9; padding: 15px; border-radius: 8px; border-left: 5px solid #007bff; max-height: 200px; overflow-y: auto;">
-  <ul>
-    <li><b>[2025.01]</b> One paper accepted by <b>TPAMI 2025</b>!</li>
-    <li><b>[2024.12]</b> Invited to give a talk at [Place/University Name].</li>
-    <li><b>[2024.05]</b> Awarded the [Name of Scholarship/Award].</li>
+<div style="background-color: #fcfcfc; padding: 18px; border-radius: 10px; border: 1px solid #eee; border-left: 5px solid #0056b3;">
+  <ul style="list-style-type: none; margin-left: -20px; font-size: 0.95rem; line-height: 1.6;">
+    <li style="margin-bottom: 10px;">
+      <span style="background-color: #eef6ff; color: #0056b3; padding: 2px 8px; border-radius: 4px; font-weight: bold; margin-right: 10px;">Apr 2025</span> 
+      Our paper <b>"METOR: A Unified Framework for Mutual Enhancement of Objects and Relationships"</b> was accepted by <b>IJCAI 2025</b>!
+    </li>
+    <li style="margin-bottom: 10px;">
+      <span style="background-color: #eef6ff; color: #0056b3; padding: 2px 8px; border-radius: 4px; font-weight: bold; margin-right: 10px;">Apr 2025</span> 
+      One paper on <b>End-to-end Open-vocabulary VidVRD</b> was accepted by <b>IEEE TPAMI</b>! 
+    </li>
+    <li style="margin-bottom: 10px;">
+      <span style="background-color: #f8f9fa; color: #666; padding: 2px 8px; border-radius: 4px; font-weight: bold; margin-right: 10px;">Dec 2023</span> 
+      One paper on <b>Multi-modal Prompting for Open-vocabulary VidVRD</b> was accepted by <b>AAAI 2024</b>!
+    </li>
   </ul>
 </div>
 
