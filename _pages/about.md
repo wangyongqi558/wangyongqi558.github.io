@@ -53,13 +53,5 @@ Prompting"</b> was accepted by <b>IEEE TPAMI</b>.</span>
       <a href="{{ post.code_url }}" style="padding: 5px 12px; background: #333; color: white; border-radius: 4px; text-decoration: none; font-size: 0.9em;">[Code / GitHub]</a>
     {% endif %}
   </div>
-
-  <div style="width: 100%; margin-bottom: 25px;">
-    <img src="{{ post.teaser }}" style="width: 100%; max-width: 900px; display: block; margin: 0 auto; border: 1px solid #eee; border-radius: 4px;">
-  </div>
-
-  <div style="width: 100%; text-align: justify; line-height: 1.6; color: #444;">
-    <p>{{ post.abstract_short }}</p>
-  </div>
 </div>
 {% endfor %}
