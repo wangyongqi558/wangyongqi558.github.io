@@ -70,18 +70,20 @@ h1, h2, h3, h4, h5, h6 {
 /* 学术按钮优化：改用更高级的深蓝色或科技感灰色 */
 .btn-academic {
   display: inline-block;
-  padding: 3px 12px;
-  margin: 4px 6px 4px 0;
-  border-radius: 6px; /* 稍微方一点更有学术感 */
+  padding: 2px 10px;
+  margin-right: 5px;
+  border-radius: 4px;
   font-size: 0.85rem;
   font-weight: 500;
   text-decoration: none !important;
-  border: 1px solid #444;
-  color: #444 !important;
+  border: 1px solid #333; /* 改为深灰色边框 */
+  color: #333 !important;
+  background-color: transparent;
   transition: all 0.2s;
 }
+
 .btn-academic:hover {
-  background-color: #444;
+  background-color: #333; /* 悬停变为全黑/灰 */
   color: #fff !important;
 }
 
