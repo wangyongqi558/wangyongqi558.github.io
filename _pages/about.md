@@ -19,21 +19,25 @@ author_profile: false # 彻底移除左侧边栏
 ---
 
 ## 📢 News
-<div style="margin-top: 1rem;">
-  <div style="display: flex; margin-bottom: 8px;">
-    <span style="min-width: 85px; color: #666; font-size: 0.9rem; font-weight: 500;">Apr. 2025</span>
-    <span style="flex: 1; font-size: 0.95rem;">Our paper <b>"METOR: A Unified Framework for Mutual Enhancement of Objects and
-Relationships in Open-vocabulary Video Visual Relationship Detection"</b> was accepted by <b>IJCAI 2025</b>.</span>
+
+<div style="margin-bottom: 2rem;">
+  <div style="display: flex; justify-content: space-between; margin-bottom: 10px; font-size: 0.95rem;">
+    <span style="font-weight: 600; color: #666; min-width: 90px;">Apr 2025</span>
+    <span style="flex: 1; text-align: justify; border-bottom: 1px dashed #eee; padding-bottom: 8px;">
+      Our paper <b>"METOR: A Unified Framework for Mutual Enhancement of Objects and Relationships in Open-vocabulary Video Visual Relationship Detection"</b> was accepted by <b>IJCAI 2025</b>.
+    </span>
   </div>
-  <div style="display: flex; margin-bottom: 8px;">
-    <span style="min-width: 85px; color: #666; font-size: 0.9rem; font-weight: 500;">Apr. 2025</span>
-    <span style="flex: 1; font-size: 0.95rem;">Our paper <b>"End-to-end Open-vocabulary Video Visual
-Relationship Detection using Multi-modal
-Prompting"</b> was accepted by <b>IEEE TPAMI</b>.</span>
+  <div style="display: flex; justify-content: space-between; margin-bottom: 10px; font-size: 0.95rem;">
+    <span style="font-weight: 600; color: #666; min-width: 90px;">Apr 2025</span>
+    <span style="flex: 1; text-align: justify; border-bottom: 1px dashed #eee; padding-bottom: 8px;">
+      Our paper <b>"End-to-end Open-vocabulary Video Visual Relationship Detection using Multi-modal Prompting"</b> was accepted by <b>IEEE TPAMI</b>.
+    </span>
   </div>
-  <div style="display: flex; margin-bottom: 8px;">
-    <span style="min-width: 85px; color: #666; font-size: 0.9rem; font-weight: 500;">Dec. 2023</span>
-    <span style="flex: 1; font-size: 0.95rem;">Our paper <b>"Multi-Modal Prompting for Open-Vocabulary Video Visual Relationship Detection"</b> was accepted by <b>AAAI 2024</b>.</span>
+  <div style="display: flex; justify-content: space-between; margin-bottom: 10px; font-size: 0.95rem;">
+    <span style="font-weight: 600; color: #666; min-width: 90px;">Dec 2023</span>
+    <span style="flex: 1; text-align: justify;">
+      Our paper <b>"Multi-Modal Prompting for Open-Vocabulary Video Visual Relationship Detection"</b> was accepted by <b>AAAI 2024</b>.
+    </span>
   </div>
 </div>
 
