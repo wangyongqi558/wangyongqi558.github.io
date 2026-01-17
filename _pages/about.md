@@ -52,7 +52,7 @@ author_profile: false # 彻底移除左侧边栏
 
 {% for post in site.portfolio reversed %}
 <div style="margin-bottom: 15px; width: 100%; text-align: left;">
-  <h3 style="margin-bottom: 10px; font-size: 1.1em; color: #222;">
+  <h3 style="margin-bottom: 3px; font-size: 1.1em; color: #222;">
     <a href="{{ post.url }}" style="text-decoration: none; color: inherit;">{{ post.title }}</a>
   </h3>
 
