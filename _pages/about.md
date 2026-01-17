@@ -51,12 +51,12 @@ author_profile: false # 彻底移除左侧边栏
 ## 📚 Publications
 
 {% for post in site.portfolio reversed %}
-<div style="margin-bottom: 40px; width: 100%; text-align: left;">
-  <h3 style="margin-bottom: 10px; font-size: 1em; color: #222;">
+<div style="margin-bottom: 25px; width: 100%; text-align: left;">
+  <h3 style="margin-bottom: 10px; font-size: 1.2em; color: #222;">
     <a href="{{ post.url }}" style="text-decoration: none; color: inherit;">{{ post.title }}</a>
   </h3>
 
-  <div style="margin-bottom: 20px;">
+  <div style="margin-bottom: 10px;">
     {% if post.paper_url %}
       <a href="{{ post.paper_url }}" style="margin-right: 15px; padding: 5px 12px; background: #007bff; color: white; border-radius: 4px; text-decoration: none; font-size: 0.6em;">[Paper / PDF]</a>
     {% endif %}
