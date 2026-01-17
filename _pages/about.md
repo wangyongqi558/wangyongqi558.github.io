@@ -51,17 +51,17 @@ author_profile: false # 彻底移除左侧边栏
 ## 📚 Publications
 
 {% for post in site.portfolio reversed %}
-<div style="margin-bottom: 60px; width: 100%; text-align: left;">
+<div style="margin-bottom: 40px; width: 100%; text-align: left;">
   <h3 style="margin-bottom: 10px; font-size: 1em; color: #222;">
     <a href="{{ post.url }}" style="text-decoration: none; color: inherit;">{{ post.title }}</a>
   </h3>
 
   <div style="margin-bottom: 20px;">
     {% if post.paper_url %}
-      <a href="{{ post.paper_url }}" style="margin-right: 15px; padding: 5px 12px; background: #007bff; color: white; border-radius: 4px; text-decoration: none; font-size: 0.9em;">[Paper / PDF]</a>
+      <a href="{{ post.paper_url }}" style="margin-right: 15px; padding: 5px 12px; background: #007bff; color: white; border-radius: 4px; text-decoration: none; font-size: 0.6em;">[Paper / PDF]</a>
     {% endif %}
     {% if post.code_url %}
-      <a href="{{ post.code_url }}" style="padding: 5px 12px; background: #333; color: white; border-radius: 4px; text-decoration: none; font-size: 0.9em;">[Code / GitHub]</a>
+      <a href="{{ post.code_url }}" style="padding: 5px 12px; background: #333; color: white; border-radius: 4px; text-decoration: none; font-size: 0.6em;">[Code / GitHub]</a>
     {% endif %}
   </div>
 </div>
