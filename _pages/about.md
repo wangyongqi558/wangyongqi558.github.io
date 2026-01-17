@@ -19,7 +19,13 @@ author_profile: false # 彻底移除左侧边栏
 ---
 
 ## 📢 News
-
+<div style="margin-bottom: 2rem;">
+  <div style="display: flex; justify-content: space-between; margin-bottom: 10px; font-size: 0.95rem;">
+    <span style="font-weight: 600; color: #666; min-width: 90px;">Nov 2025</span>
+    <span style="flex: 1; text-align: justify; border-bottom: 1px dashed #eee; padding-bottom: 8px;">
+       We introduced <b>VaM-VidVRD</b>, the first multi-modal benchmark for <b>Open-vocabulary Video Visual Relationship Detection</b> featuring synchronized audio, text, and 3D data, in our paper <b>Multi-modal Open-vocabulary Video Visual Relationship Detection</b>.
+    </span>
+  </div>
 <div style="margin-bottom: 2rem;">
   <div style="display: flex; justify-content: space-between; margin-bottom: 10px; font-size: 0.95rem;">
     <span style="font-weight: 600; color: #666; min-width: 90px;">Apr 2025</span>
