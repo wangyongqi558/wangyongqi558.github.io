@@ -25,7 +25,7 @@ author_profile: false # 彻底移除左侧边栏
 
 <div id="geminiContainer" style="display: none; width: 100%; text-align: center; margin-bottom: 50px; padding: 25px; background-color: #fcfcfc; border: 1px dashed #007bff; border-radius: 12px;">
     
-    <h3 style="color: #007bff; margin-bottom: 15px;">Visual Comparison: Gemini vs. Our e2e-Model</h3>
+    <h3 style="color: #007bff; margin-bottom: 15px;">Gemini 3 Pro Results</h3>
     
     <video id="geminiVideo" width="100%" style="max-width: 800px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);" controls>
         <source src="/images/gemini_comparison.mp4" type="video/mp4">
