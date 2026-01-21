@@ -16,6 +16,42 @@ author_profile: false # 彻底移除左侧边栏
   </p>
 </div>
 
+
+<div style="text-align: center; margin-top: 20px; margin-bottom: 30px;">
+    <button id="geminiBtn" style="padding: 12px 25px; background-color: #007bff; color: white; border: none; border-radius: 6px; font-size: 16px; cursor: pointer; transition: 0.3s; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+        🚀 Compare to Gemini's Detection Results
+    </button>
+</div>
+
+<div id="geminiContainer" style="display: none; width: 100%; text-align: center; margin-bottom: 50px; padding: 20px; background-color: #fcfcfc; border: 1px dashed #007bff; border-radius: 12px;">
+    <h3 style="color: #007bff; margin-bottom: 15px;">Gemini Detection Results</h3>
+    <video id="geminiVideo" width="100%" style="max-width: 800px; border-radius: 8px;" controls>
+        <source src="/images/gemini_comparison.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <p style="margin-top: 10px; color: #666; font-size: 0.9em;">
+        This video shows the baseline detection results from the Gemini model for comparison.
+    </p>
+</div>
+
+<script>
+    document.getElementById('geminiBtn').onclick = function() {
+        var container = document.getElementById('geminiContainer');
+        var video = document.getElementById('geminiVideo');
+        
+        if (container.style.display === "none") {
+            container.style.display = "block";
+            this.innerHTML = "收起对比结果 (Close Comparison)";
+            this.style.backgroundColor = "#6c757d";
+            video.play(); // 自动开始播放对比视频
+        } else {
+            container.style.display = "none";
+            this.innerHTML = "🚀 Compare to Gemini's Detection Results";
+            this.style.backgroundColor = "#007bff";
+            video.pause(); // 关闭时暂停视频
+        }
+    };
+</script>
 ---
 
 ## 📢 News
