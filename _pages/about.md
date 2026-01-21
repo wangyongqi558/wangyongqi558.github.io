@@ -23,12 +23,45 @@ author_profile: false # 彻底移除左侧边栏
     </button>
 </div>
 
-<div id="geminiContainer" style="display: none; width: 100%; text-align: center; margin-bottom: 50px; padding: 20px; background-color: #fcfcfc; border: 1px dashed #007bff; border-radius: 12px;">
-    <h3 style="color: #007bff; margin-bottom: 15px;">Gemini Detection Results</h3>
-    <video id="geminiVideo" width="100%" style="max-width: 800px; border-radius: 8px;" controls>
+<div id="geminiContainer" style="display: none; width: 100%; text-align: center; margin-bottom: 50px; padding: 25px; background-color: #fcfcfc; border: 1px dashed #007bff; border-radius: 12px;">
+    
+    <h3 style="color: #007bff; margin-bottom: 15px;">Visual Comparison: Gemini vs. Our e2e-Model</h3>
+    
+    <video id="geminiVideo" width="100%" style="max-width: 800px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);" controls>
         <source src="/images/gemini_comparison.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
+
+    <h3 style="color: #333; margin-top: 35px; margin-bottom: 20px;">Quantitative Results (Average mAP)</h3>
+
+    <div style="overflow-x: auto; margin: 0 auto; max-width: 600px;">
+        <table style="width: 100%; border-collapse: collapse; background: white;">
+            <thead>
+                <tr style="background-color: #007bff; color: white;">
+                    <th style="padding: 12px; border: 1px solid #ddd;">Task</th>
+                    <th style="padding: 12px; border: 1px solid #ddd;">e2e-VidVRD (Ours)</th>
+                    <th style="padding: 12px; border: 1px solid #ddd;">Gemini (MLLM)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 12px; border: 1px solid #ddd; font-weight: bold;">SGDet</td>
+                    <td style="padding: 12px; border: 1px solid #ddd; color: #28a745; font-weight: bold;">0.3250</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;">0.0016</td>
+                </tr>
+                <tr style="background-color: #f9f9f9;">
+                    <td style="padding: 12px; border: 1px solid #ddd; font-weight: bold;">PredCls</td>
+                    <td style="padding: 12px; border: 1px solid #ddd; color: #28a745; font-weight: bold;">0.4314</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;">0.1356</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p style="margin-top: 20px; color: #666; font-size: 0.95em; line-height: 1.6; text-align: justify; padding: 0 20px;">
+        As shown in the table above, our <strong>end-to-end framework</strong> significantly outperforms the general-purpose Multi-modal Large Language Model (Gemini) in both <strong>Scene Graph Detection (SGDet)</strong> and <strong>Predicate Classification (PredCls)</strong>. 
+        Especially in the SGDet task, our model demonstrates superior capability in capturing precise object trajectories and their dynamic relationships simultaneously.
+    </p>
 </div>
 
 <script>
