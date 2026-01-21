@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
         btn.addEventListener('click', function() {
             if (container.style.display === "none") {
                 container.style.display = "block";
-                this.innerHTML = "收起对比结果 (Close Comparison)";
+                this.innerHTML = "Close Comparison";
                 this.style.backgroundColor = "#6c757d";
                 video.play();
             } else {
