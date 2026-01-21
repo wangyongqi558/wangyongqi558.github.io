@@ -12,7 +12,7 @@ author_profile: false # 彻底移除左侧边栏
     Your browser does not support the video tag.
   </video>
   <p style="color: #666; margin-top: 10px; font-style: italic;">
-    This demo showcases our unified framework across various open-vocabulary scenarios.
+    This demo showcases our end to end model across various open-vocabulary scenarios.
   </p>
 </div>
 
